@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'iranSans';
+}
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background:linear-gradient(to top, rgba(0, 0, 0, .3),  rgba(0, 0, 0, .9)) ,url("images/background.jpg") center no-repeat ;
+  background-size: cover;
+  -webkit-user-select: none;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  list-style: none;
+  color: #fff;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+li > img {
+  height: 40px;
+  margin-top: 20px;
+  animation: anim 3s infinite;
+
+}
+
+li > h1 {
+  font-size: 50px;
+}
+
+li > p {
+  margin-bottom: 30px;
+}
+
+
+
+#singUp {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  transition: all ease .3s;
+  cursor: pointer;
+  outline: none;
+}
+
+#singUp:hover {
+  transform:  translateY(-2px);
+  background-color: rgba(0, 255, 0, .2);
+}
+
+@keyframes anim{
+  0% {transform:  translateY(0);}
+  20% {transform:  translateY(0);}
+  40% {transform:  translateY(-20px);}
+  50% {transform:  translateY(0);}
+  60% {transform:  translateY(-10px);}
+  80% {transform:  translateY(0);}
+  100% {transform:  translateY(0);}
+}
+
+@media (max-width:500px){
+
+  ul {
+    width: 300px;
+  }
+  li > h1{
+    font-size: 30px;
+  }
+}
+
+
+
